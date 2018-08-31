@@ -17,7 +17,7 @@ RUN wget http://$PAK_MIRROR/pak0.pk3 \
 
 COPY etl_server.cfg /root/etlegacy/etmain/
 
-EXPOSE 27960/udp
+EXPOSE 27960:27960/udp
 
 WORKDIR $ETL_PATH
 ENTRYPOINT ./etlded_bot.sh

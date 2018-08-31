@@ -1,0 +1,6 @@
+version: '3'
+services:
+  etlegacy:
+    build: .
+    ports:
+      - "27960:27960/udp"
